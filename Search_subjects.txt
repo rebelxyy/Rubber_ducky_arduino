@@ -1,0 +1,11 @@
+
+
+
+
+DarkComet RAT ;
+
+PortForwarding ; 
+
+Hardware keylogger ;
+
+memory dump ; 	

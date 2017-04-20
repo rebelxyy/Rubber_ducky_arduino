@@ -1,0 +1,41 @@
+
+
+#include "Keyboard.h"
+
+void setup(){
+  
+  Keyboard.begin();
+  }
+
+void loop(){
+  delay(4000);
+  Keyboard.press(KEY_LEFT_GUI);
+  delay(1000);
+  Keyboard.releaseAll();
+  Keyboard.print("pozershell");
+  delay(1000);
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.press(KEY_LEFT_SHIFT);
+  delay(1000);
+  Keyboard.press(KEY_RETURN);
+  Keyboard.releaseAll();
+  delay(1000);
+  Keyboard.press(KEY_LEFT_ARROW);
+  Keyboard.releaseAll();
+  delay(1000);
+  Keyboard.press(KEY_RETURN);
+  Keyboard.releaseAll();
+  delay(4000);
+  for(int x = 0 ; x < 127 ; x++){
+    Keyboard.write(x);
+    Keyboard.print(x);
+    Keyboard.press(KEY_LEFT_SHFIT);
+    Keyborad
+  }
+ // Keyboard.press(KEY_RETURN);
+  //Keyboard.releaseAll();
+  
+  //delay(100);
+  Keyboard.releaseAll();
+  while (true);
+}

@@ -1,0 +1,33 @@
+#include "Keyboard.h"
+
+void setup(){
+  
+  Keyboard.begin();
+  }
+
+void loop(){
+  delay(4000);
+  Keyboard.press(KEY_LEFT_GUI);
+  delay(1000);
+  Keyboard.releaseAll();
+  Keyboard.print("cmd");
+  delay(1000);
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.press(KEY_LEFT_SHIFT);
+  delay(1000);
+  Keyboard.press(KEY_RETURN);
+  Keyboard.releaseAll();
+  delay(1000);
+  Keyboard.press(KEY_LEFT_ARROW);
+  Keyboard.releaseAll();
+  delay(1000);
+  Keyboard.press(KEY_RETURN);
+  Keyboard.releaseAll();
+  delay(1000);
+  Keyboard.println("tree");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.releaseAll();
+  
+  //delay(100);
+  Keyboard.releaseAll();
+  while (true);
